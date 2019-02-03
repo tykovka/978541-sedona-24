@@ -94,7 +94,25 @@
     <section class="main-search">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <!-- Здесь должна быть форма -->
+      <h3>Поиск гостиницы в Седоне</h3>
+      <form action="#" method="POST">
+       <p><label for="arrival_date">Дата заезда</label> 
+        <input type="date" id="arrival_date" name="arrival_date" value="2017-04-24">
+      </p>
+      <p>
+        <label for="departure_date">Дата выезда</label> 
+        <input type="date" id="departure_date" name="departure_datee" value="2017-05-04">
+      </p>
+      <p>
+          <label for="grown">Взрослые</label> 
+          <input type="number" id="grown" name="grown" min="0" value="0">
+          <label for="children">Дети</label> 
+          <input type="number" id="children" name="children" min="0" value="0">
+        </p>
+        <p>
+          <input type="submit" value="Найти">
+        </p>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
