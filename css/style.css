@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    font-family: 'PT Sans', Arial, sans-serif;  
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: #ffffff;
+    background-image: url(../img/background.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+.main-navigation{
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+.sity-navigation{
+    list-style: none;
+}
+.sity-navigation a{
+    color: #000000;
+}
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+.description{
+    background-color: #ffffff;
+}
+.description h2{
+    font-size: 21px;
+    line-height: 26px;
+}
+.description p{
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reasons h2{
+    font-size: 21px;
+    line-height: 21px;
+}
+.reasons span,
+.reasons p{
+    font-size: 14px;
+    line-height: 21px;
+}
+.reasons-text h2,
+.reasons-text span,
+.reasons-text p{
+    color: #ffffff
+}
+.reasons-list{
+    list-style: none;
+}
+.complex{
+    background-color: #ffffff;
+}
+.complex-more{
+    background-color: #eeeeee;
+}
+.search_hotel{
+    background-color: #ffffff;
+}
+.search_hotel h2{
+    font-size: 30px;
+    line-height: 36px;
+}
+.search_hotel p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.search-hotel-button{
+    font-size: 21px;
+	line-height: 26px;
+    font-weight: bold;
+    
+    background-color: #766357;
+}
+ /* не получается залать изменение цвета кнопки */
+.search-hotel-button button:hover{
+    background-color: #604e43;
+}
+.find-button{
+    background-color: #81b3d2
+}
+.network-list{
+    list-style: none;
+}
+.visit a{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color:black;
+}
+.development a{
+    color:black;
+}
+/* catalog.html */
+.infrastructure-list,
+.filters-list,
+.hotels-list,
+.filters-type-list,
+.arrow-list{
+    list-style: none;
+}

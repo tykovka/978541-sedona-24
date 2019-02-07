@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona-hotels</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Sedona"></a>
-      <ul>
+      <ul class="sity-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
@@ -23,7 +25,7 @@
       <form action="#" method="POST">
         <div class="filters">
           <h2>Инфраструктура</h2>
-          <ul>
+          <ul class="infrastructure-list">
             <li>
               <label><input type="checkbox" name="pool" checked>
                 Бассейн
@@ -43,7 +45,7 @@
         </div>
         <div class="filters">
           <h2>Тип жилья</h2>
-          <ul>
+          <ul class="filters-list">
             <li>
               <label><input type="checkbox" name="hotel" checked>
               Гостиница
@@ -79,12 +81,12 @@
     <section class="filters_results">
       <h2>Найдено:</h2> <span>3</span>
       <span>Сортировка</span>
-      <ul>
+      <ul class="filters-type-list">
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
       </ul>
-      <ul>
+      <ul class="arrow-list">
         <li><a href="#">▲</a></li>
         <li><a href="#">▼</a></li>
       </ul>
@@ -115,7 +117,7 @@
             <div class="item-image">
               <img src="img/desert-quail.jpg" width="135" height="90" alt="Мотель Desert quail inn">
             </div>
-            <div class="description">
+            <div class="item-description">
               <h1><a href="#">Desert quail inn</a></h1>
               <span class="type">Мотель</span>
               <span class="price">от 3000Р.</span>
@@ -153,7 +155,7 @@
     <div class="main-visit">
       <a href="#">#visitsedona</a>
     </div>
-    <ul>
+    <ul class="network-list">
       <li><a class="social-button" href="#">Twitter</a></li>
       <li><a class="social-button" href="#">Facebook</a></li>
       <li><a class="social-button" href="#">Youtube</a></li>
