@@ -21,52 +21,64 @@
   <main class="container">
     <section class="filters">
       <form action="#" method="POST">
-        <div class="filters_type">
+        <div class="filters">
           <h2>Инфраструктура</h2>
           <ul>
             <li>
-              <label>Бассейн</label>
-              <input type="checkbox" name="pool" checked>
+              <label><input type="checkbox" name="pool" checked>
+                Бассейн
+            </label>
             </li>
             <li>
-              <label>Парковка</label>
-              <input type="checkbox" name="parking">
+              <label><input type="checkbox" name="parking">
+              Парковка
+            </label>
             </li>
             <li>
-              <label>WI-FI</label>
-              <input type="checkbox" name="WI-FI">
+              <label><input type="checkbox" name="WI-FI">
+              WI-FI
+            </label>
             </li>
           </ul>
         </div>
-        <div class="filters_type">
+        <div class="filters">
           <h2>Тип жилья</h2>
           <ul>
             <li>
-              <label>Гостиница</label>
-              <input type="checkbox" name="hotel" checked>
+              <label><input type="checkbox" name="hotel" checked>
+              Гостиница
+            </label>
             </li>
             <li>
-              <label>Мотель</label>
-              <input type="checkbox" name="motel" checked>
+              <label><input type="checkbox" name="motel" checked>
+              Мотель
+            </label>
             </li>
             <li>
-              <label>Апартаменты</label>
-              <input type="checkbox" name="apartments" checked>
+              <label><input type="checkbox" name="apartments" checked>
+              Апартаменты
+            </label>
             </li>
           </ul>
         </div>
-        <div class="filters_type">
+        <div class="filters">
           <h2>Стоимость в сутки(Р):</h2>
-          <!--Ползунок стоимости -->
+          <div>
+            <span>от 0</span>
+            <span>до 3000</span>
+          </div>
+          <div>
+            <input type="range" id="rating" name="rating" min="0" max="3000" >
+          </div>
+
           <input type="button" value="Показать">
         </div>
       </form>
     </section>
 
     <section class="filters_results">
-      <span>Найдено: 3</span>
+      <h2>Найдено:</h2> <span>3</span>
       <span>Сортировка</span>
-      <!-- Нужно ли цену,тип,рейтинг и стрелки вверх-вниз оборачивать в ссылки?-->
       <ul>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
