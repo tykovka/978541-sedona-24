@@ -8,7 +8,7 @@ body{
     text-align: center;
 
     background-color: #ffffff;
-    background-image: url(../img/background.jpg);
+    /* background-image: url(../img/background.jpg); */
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -34,6 +34,9 @@ a{
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+.welcome{
+    background-image: url(../img/background.jpg);
 }
 .description{
     background-color: #ffffff;
@@ -88,8 +91,8 @@ a{
     
     background-color: #766357;
 }
- /* не получается залать изменение цвета кнопки */
-.search-hotel-button button:hover{
+.search-hotel-button:hover{
+    /* ИЗМЕНЕНИЕ ЦВЕТА ПРИ НАЖАТИИ */
     background-color: #604e43;
 }
 .find-button{
@@ -97,6 +100,9 @@ a{
 }
 .network-list{
     list-style: none;
+}
+.network-list a{
+    color: #000000; 
 }
 .visit a{
     font-size: 21px;
@@ -107,11 +113,91 @@ a{
 .development a{
     color:black;
 }
+.main-footer{
+    background-color: #ffffff;
+}
 /* catalog.html */
-.infrastructure-list,
+.filters{
+    background-image: url(../img/background.jpg);
+}
 .filters-list,
 .hotels-list,
 .filters-type-list,
-.arrow-list{
+.arrow-list,
+.item-list{
     list-style: none;
+}
+.filters h2{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.filters span{
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+.filters-list{
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+.show-result{
+    color:#ffffff; 
+    border-color: #ffffff;
+    background: none;
+}
+.show-result:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+.filters_results h2,
+.filters_results span{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.filters_results p{
+    font-size: 12px;
+    line-height: 18px;
+}
+.filters-type-list a{
+    font-size: 12px;
+    line-height: 18px;
+    color:#cacaca;
+}
+.filters-type-list a:hover{
+    color:#81b3d2;
+
+}
+.filters-type-list a:active{
+    color:#000000;
+
+}
+.active a{
+    color:#81b3d2;
+}
+.item h1{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.item a{
+    color: #000000;
+}
+.item span{
+    font-size: 14px;
+    line-height: 21px;
+}
+.rating{
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+}
+.stars{
+    color:#81b3d2;
+}
+.without-filters{
+    background-color:#fefefe; 
 }
