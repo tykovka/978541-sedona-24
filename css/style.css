@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     font-family: 'PT Sans', Arial, sans-serif;  
     font-size: 14px;
@@ -6,117 +6,203 @@ body{
     color: #000000;
     text-transform: uppercase;
     text-align: center;
-
     background-color: #ffffff;
-    /* background-image: url(../img/background.jpg); */
     background-position: top center;
     background-repeat: no-repeat;
 }
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 a{
     text-decoration: none;
 }
-.main-navigation{
+
+.logo {
+    width: 138px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.main-navigation {
     font-size: 14px;
     line-height: 26px;
+    font-weight: bold;
     color: #000000;
-
     background-color: #ffffff;
 }
-.sity-navigation{
+
+.sity-navigation {
     list-style: none;
 }
-.sity-navigation a{
+
+.sity-navigation a {
     color: #000000;
 }
-.visually-hidden{
+
+.visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
 }
-.welcome{
-    background-image: url(../img/background.jpg);
+
+.sity-navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 56px;
 }
-.description{
+.sity-navigation-item:nth-child(2) {
+	margin-right: 240px;
+}
+
+.welcome {
+ background-image: url(../img/background.jpg);
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-position: 0 -80px;
+ padding-top: 75px;
+ padding-bottom: 80px;
+}
+
+.description {
+    margin: 0;
     background-color: #ffffff;
+    text-align: center;
+    padding: 35px 350px 60px;
 }
-.description h2{
+
+.description h2 {
     font-size: 21px;
     line-height: 26px;
 }
-.description p{
+
+.description p {
     font-size: 14px;
     line-height: 26px;
     color: #333333;
 }
-.reasons h2{
+
+.reasons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.reasons h2 {
     font-size: 21px;
     line-height: 21px;
 }
+
 .reasons span,
-.reasons p{
+.reasons p {
     font-size: 14px;
     line-height: 21px;
 }
-.reasons-text h2,
-.reasons-text span,
-.reasons-text p{
-    color: #ffffff
+
+.reasons-text{
+    width: 400px;
+    color: #ffffff;
+    background-color: #81b3d2;
+    text-align: center;
+    padding: 40px 60px 60px;
+    
 }
-.reasons-list{
+
+.reasons-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
-.complex{
-    background-color: #ffffff;
+
+.reasons-list-item:first-child {
+    vertical-align: middle;
+    padding: 60px 70px 85px 70px;
 }
-.complex-more{
+
+.reasons-list-item:nth-child(2) {
+    vertical-align: middle;
+    padding: 60px 50px 85px 50px;
+}
+
+.reasons-list-item:nth-child(3) {
+    vertical-align: middle;
+    padding: 56px 70px 85px 70px;
+}
+
+.reasons-without-img {
     background-color: #eeeeee;
+
 }
-.search_hotel{
+
+.reasons-with-img {
     background-color: #ffffff;
 }
-.search_hotel h2{
+
+.search_hotel {
+    background-color: #ffffff;
+}
+
+.search_hotel h2 {
     font-size: 30px;
     line-height: 36px;
 }
-.search_hotel p{
+.search_hotel p {
     font-size: 14px;
     line-height: 24px;
 }
-.search-hotel-button{
+
+.search-hotel-button {
     font-size: 21px;
 	line-height: 26px;
     font-weight: bold;
-    
     background-color: #766357;
 }
+
 .search-hotel-button:hover{
     /* ИЗМЕНЕНИЕ ЦВЕТА ПРИ НАЖАТИИ */
     background-color: #604e43;
 }
+
 .find-button{
     background-color: #81b3d2
 }
-.network-list{
+
+.network-list {
     list-style: none;
 }
-.network-list a{
+
+.network-list a {
     color: #000000; 
 }
-.visit a{
+
+.visit a {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color:black;
 }
-.development a{
+
+.development a {
     color:black;
 }
-.main-footer{
+
+.main-footer {
     background-color: #ffffff;
 }
-/* catalog.html */
+
+/*      catalog.html         */
+
 .filters{
     background-image: url(../img/background.jpg);
 }
@@ -149,7 +235,7 @@ a{
     background: none;
 }
 .show-result span{
-    font-size: 50px;
+    font-size: 14px;
     line-height: 21px;
 }
 .show-result:hover{
