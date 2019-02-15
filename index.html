@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona-index</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -120,27 +120,20 @@
       <section class="search-hotel">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </section>
-      <div class="search">
-        <button class="button search-hotel-button">Поиск гостиницы в Седоне</button>
-      </div>
+      </section>     
+      <button type="button" class="search-hotel-button">Поиск гостиницы в Седоне</button>
       <section class="search-form">
         <form action="#" method="POST">
-          <div class="form-row">
             <div class="form-control">
               <label for="arrival_date">Дата заезда:</label>
               <input class="form-input" type="text" id="arrival_date" name="arrival_date"
                 pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" value="24 апреля 2017">
             </div>
-          </div>
-          <div class="form-row">
             <div class="form-control">
               <label for="departure-date">Дата выезда:</label>
               <input class="form-input" type="text" id="departure_date" name="departure_datee"
                 pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" value="4 июля 2017">
             </div>
-          </div>
-          <div class="form-row">
             <div class="form-control half-width">
               <label for="grown">Взрослые:</label>
               <input class="form-input" type="number" id="grown" name="grown" min="0" value="0">
@@ -149,10 +142,7 @@
               <label for="children">Дети:</label>
               <input class="form-input" type="number" id="children" name="children" min="0" value="0">
             </div>
-          </div>
-          <div class="form-row">
             <button type="submit" class="button find-button">Найти</button>
-          </div>
         </form>
       </section>
     </main>

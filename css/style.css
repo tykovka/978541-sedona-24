@@ -316,44 +316,57 @@ margin-top: 21px;
 
 /*      catalog.html         */
 
-.filters {
-    background-image: url(../img/background.jpg);
-}
 
 .filters-list,
 .hotels-list,
 .filters-type-list,
 .arrow-list,
-.item-list {
+.item-list,
+.sort-arrow-list {
     list-style: none;
 }
 
-.filters h2 {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: bold;
-    color: #ffffff;
+.selection-hotel {
+    display: flex;
 }
 
-.filters span {
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
+.filters {
+    box-sizing: border-box;
+    background-image: url(../img/background.jpg);
+    height: 218px;
+    background-size: cover;
+    padding: 30px 73px;
 }
 
 .filters-list {
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.filters-type-item {
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dashed #81b3d2;
+}
+.form-left-column {
+    width: 250px;
+    text-align: left;
+    padding: 0;
+}
+.form-left-column h2 {
+    text-align: left;
 }
 
+.filters-middle-column {
+    width: 300px;
+    text-align: left;
+    margin-right: 200px;
+}
 .show-result {
+    width: 135px;
+    height: 35px;
+    text-transform: uppercase;
     color: #ffffff;
     border-color: #ffffff;
     background: none;
-}
-
-.show-result span {
     font-size: 14px;
     line-height: 21px;
 }
@@ -363,14 +376,48 @@ margin-top: 21px;
     background-color: #ffffff;
 }
 
-.filters_results h2,
-.filters_results span {
+.filters h2 {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.filters-list label,
+.filters span  {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.filters-results {
+    display: flex;
+    align-items: center;
+    padding: 12px 73px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.found-quantity {
+
+    margin-right: 30px;
+}
+
+.filters-type-list {
+    display: flex;
+    box-sizing: border-box;
+    width: 288px;
+    padding: 0 11px 0 40px;
+    justify-content: space-between;
+}
+
+.filters-results h2{
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
 }
 
-.filters_results p {
+.filters-results p {
     font-size: 12px;
     line-height: 18px;
 }
@@ -389,33 +436,119 @@ margin-top: 21px;
     color: #000000;
 }
 
-.active a {
-    color: #81b3d2;
+.sort-arrow-list {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+}
+.arrow-up {
+    margin-right: 11px;
 }
 
-.item h1 {
+.filters-type-item-active a {
+    color: #81b3d2;
+}
+.item-list {
+    padding: 0;
+}
+
+.item-description {
+    margin-left: 30px;
+}
+
+.item-image {
+    display: block;
+}
+.item-hotel h1 {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
 }
 
-.item a {
-    color: #000000;
-}
-
-.item span {
+.item-hotel span {
     font-size: 14px;
     line-height: 21px;
+}
+
+.item-hotel {
+    display: flex;
+    padding: 15px 73px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.item-heading a{
+    color: #000000;
+}
+.price,
+.type {
+    color: #696969;
+}
+
+.button-more,
+.button-reserve{
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1px 17px;
+    margin-top: 15px;
+}
+.button-reserve {
+    background-color: #766357;
+}
+.button-more {
+    background-color: #81b3d2;
+    
+}
+.item-hotel-left {
+    display: flex;
 }
 
 .rating {
     font-size: 14px;
     line-height: 21px;
     color: #666666;
+    padding: 2px 14px;
+    background-color: #f2f2f2;
 }
 
-.stars {
-    color: #81b3d2;
+.item-rating {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: right;
+}
+
+.item-heading  {
+    display: flex;
+    text-align: left;
+    margin: 0;
+}
+.item-description ,
+.item-rating {
+    margin-left:auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: stretch ;
+}
+.item-description {
+     margin-left: 30px; 
+
+}
+
+.price-reserve-column {
+    display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: 7px;
+}
+
+.tupe-more-column {
+    display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+    justify-content: flex-end;
+ 
 }
 
 .without-filters {
