@@ -6,7 +6,7 @@
   <title>Sedona-index</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body>
@@ -85,7 +85,7 @@
       </section>
       <section class="reasons">
         <div class="reasons-img">
-          <img class="reasons-img" src="imÍÍg/bridge.jpg" width="800" height="256" alt="мост дьявола">
+          <img class="reasons-img" src="img/bridge.jpg" width="800" height="256" alt="мост дьявола">
         </div>
         <div class="reasons-text bridge">
           <h2>Там есть<br> мост дьявола</h2>
@@ -115,14 +115,16 @@
         </div>
       </section>
       <section class="search-hotel wrapper">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" class="search-hotel-button">Поиск гостиницы в Седоне</button>
-        <form class="search-form" action="#" method="POST">
+        <div class="text-wrapper">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <button type="button" class="search-hotel-button">Поиск гостиницы в Седоне</button>
+        </div>
+        <form class="search-form form-is-hidden animated" action="#" method="POST">
           <div class="form-control form-row">
             <label for="arrival-date">Дата заезда:</label>
-            <input class="form-input arrival-date" type="text" id="arrival-date" name="arrival_date"
-              pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" value="24 апреля 2017">
+            <input class="form-input arrival-date" type="text" id="arrival-date" name="arrival-date" 
+               value="24 апреля 2017">
             <button class="calendar">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 22">
                 <path
@@ -136,7 +138,7 @@
           <div class="form-control form-row">
             <label for="departure-date">Дата выезда:</label>
             <input class="form-input departure-date" type="text" id="departure-date" name="departure-date"
-              pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" value="4 июля 2017">
+           value="4 июля 2017">
             <button class="calendar">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 22">
                 <path
@@ -171,7 +173,7 @@
       </section>
 
       <section class="map-box">
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050596256!2d-111.83015792096036!3d34.85437338105415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1551109325883" width="1200" height="593" style="border:0" allowfullscreen></iframe>
       </section>
 
     </main>
@@ -179,6 +181,7 @@
       <div class="visit">
         <a href="#">#visitsedona</a>
       </div>
+      <div class="network-box">
       <ul class="network-list">
         <li><a class="social-button social-tw" href="#"><span class="visually-hidden">Twitter</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"
@@ -191,7 +194,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
               <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
           </a></li>
-        <li><a class="social-button social-ut" href="#"><span class="visually-hidden">Youtube</span>
+
+          <li><a class="social-button social-ut" href="#"><span class="visually-hidden">Youtube</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"
               viewBox="0 0 20 16">
               <path fill="#FFF"
@@ -199,6 +203,7 @@
             </svg>
           </a></li>
       </ul>
+    </div>
       <div class="development">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <span>Website by</span>
@@ -210,6 +215,8 @@
       </div>
     </footer>
   </div>
+  <script src="js/form-min.js">
+  </script>
 </body>
 
 </html>
