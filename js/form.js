@@ -4,13 +4,17 @@ var findBtn = document.querySelector(".find-button");
 var arrivalDt = form.querySelector("[name=arrival-date]");
 var departureDt = form.querySelector("[name=departure-date]");
 
-searchHtlBtn.addEventListener("click", function() {
+document.addEventListener("DOMContentLoaded", function() {
+    form.classList.add("form-is-hidden");
+});
+
+searchHtlBtn.addEventListener("click", function () {
     form.classList.toggle("form-is-hidden");
 });
 
-form.addEventListener("submit", function(evt) {
+form.addEventListener("submit", function (evt) {
     form.classList.remove("shake");
-    form.getBoundingClientRect(); 
+    form.getBoundingClientRect();
 
     if (!arrivalDt.value || !departureDt.value) {
         evt.preventDefault();
